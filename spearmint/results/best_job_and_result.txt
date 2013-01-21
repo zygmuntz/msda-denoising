@@ -1,0 +1,9 @@
+Best result: 0.137769
+Job-id: 4444
+Parameters: 
+name: "layers"
+int_val: 11
+
+name: "noise"
+dbl_val: 0.0903308105469
+
