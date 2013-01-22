@@ -25,7 +25,11 @@ def run_test( params ):
 	data = subprocess.check_output( ['octave', '-qf', 'run_denoise.m'] + parameters )
 	# TODO: assert
 	
-	data = subprocess.check_output( ['r', 'run_rf.r'] + parameters )
+	data = subprocess.check_output( ['r', 'run_rf.r'] )
+
+	# a ridge regression version
+	# data = subprocess.check_output( ['r', 'run_ridge.r'] )
+
 	validation_loss = get_validation_loss( data )
 
 	print validation_loss
