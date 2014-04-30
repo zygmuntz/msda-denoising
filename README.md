@@ -10,4 +10,4 @@ The code for Spearmints experiments described in [http://fastml.com/very-fast-de
 	f_rmse.r - RMSE function
 	rf.r - train a random forest on original data
 	
-	
+The original experiments described in the article used only the last layer from MSDA. Updated `run_denoise.m` to use all layers, see user comments at the end of the post.
