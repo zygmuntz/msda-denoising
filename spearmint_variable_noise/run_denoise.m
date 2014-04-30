@@ -40,7 +40,8 @@ end_i = layers * ncol;
 [ allhx, Ws ] = my_mSDA( x_combined', noise );
 
 x2 = allhx';
-x2 = x2(:, start_i:end_i );
+% if you want just the last layer, uncomment this
+% x2 = x2(:, start_i:end_i );
 
 % split back
 
